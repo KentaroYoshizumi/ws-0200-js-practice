@@ -4,6 +4,8 @@
  */
 
 function length(str) {
+  str = "あいうえお";
+console.log(str.length);       
 }
 
 /**
@@ -12,7 +14,13 @@ function length(str) {
  */
 
 function lengthIsEven(str) {
-}
+  var length = 8;
+  if (length / 2 === 0);{
+    console.log("true"); {
+    } 
+    }
+  }
+
 
 /**
  *  4.3 文字列の先頭一文字目を返却するメソッドを実装してください
@@ -20,6 +28,9 @@ function lengthIsEven(str) {
  */
 
 function firstChar(str) {
+  str = "あいうえお";
+  console.log(str.substring(0, 1));
+
 }
 
 /**
@@ -28,6 +39,9 @@ function firstChar(str) {
  */
 
 function lastChar(str) {
+  const myString = "linto.yahoo.com.";
+const stringLength = myString.length; // this will be 16
+console.log('lastChar: ', myString.charAt(stringLength - 1));
 }
 
 /**
@@ -37,6 +51,7 @@ function lastChar(str) {
  */
 
 function substring(str, a, b) {
+  console.log(str.substring(a, b));
 }
 
 /**
@@ -51,6 +66,7 @@ function substring(str, a, b) {
  * */
 
 function isInclude(a, b) {
+  "ABCDEFG".includes("DEF");
 }
 
 /**
