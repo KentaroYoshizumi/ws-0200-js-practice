@@ -2,7 +2,7 @@
 /**
  *  文字列の長さ
  *
- *  lengthをも使わずに引数で渡された文字列の長さを求める関数を定義してください
+ *  lengthを使わずに引数で渡された文字列の長さを求める関数を定義してください
  *
  *  example:
  *    'banana' => output: 5
@@ -26,8 +26,11 @@ function length(str) {
  *
  */
 function reverse(str) {
+    var splitString = str.split(""); 
+    var reverseArray = splitString.reverse();
+    var joinArray = reverseArray.join("");
+    return joinArray;
 }
-
 /**
  *  指定された文字列の位置を返却
  *
@@ -41,6 +44,10 @@ function reverse(str) {
  */
 
 function findIndex(str, char) {
+const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+const searchTerm = 'dog';
+const indexOfFirst = paragraph.indexOf(searchTerm);
+console.log(indexOfFirst);
 }
 
 /**
@@ -206,6 +213,15 @@ function filter(array, num) {
  */
 
 function fizzBuzz () {
+  for(i=1; i<=100; i++){
+    if(i%3 === 0 && i%5 !== 0){
+        console.log('Fizz');
+    }else if(i%3 !== 0 && i%5 === 0){
+        console.log('Buzz');
+    }else if(i%3 === 0 && i%5 === 0){
+        console.log('FizzBuzz');
+    }else{
+        console.log(i);
 }
 
 module.exports = {

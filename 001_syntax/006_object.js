@@ -12,9 +12,10 @@ function getPersonObject() {
    name: 'Bob',
    age: 32,
    gender: 'male',}
+   console.log(this.name[0] + this.age + this.gender[0]);
   }
    
-    console.log(this.name[0] + this.age + this.gender[0]);
+    
 
 
   
@@ -38,9 +39,10 @@ function mutateObject(person) {
     this.name= 'Bob';
     this.age= 32;
     this.gender= 'male';
+    var person1 = new mutateObject("Mary", 37, "female");
   }
 
-  var person1 = new mutateObject("Mary", 37, "female");
+  
     
   
 

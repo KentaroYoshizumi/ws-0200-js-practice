@@ -25,7 +25,7 @@ console.log(array1);
  */
 function getDays() {
   var dayOfWeekStr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  console.log(dayOfWeekStr);
+  return dayOfWeekStr;
 }
 
 /**

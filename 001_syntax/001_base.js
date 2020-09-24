@@ -3,8 +3,9 @@
  *
  */
 function helloWorld() {
+  console.log("Hello World");
 }
-console.log("Hello World");
+
 
 /**
  *  1.2 const を使って"hoge"という文字列を定義した変数を定義し、それを出力する関数を定義してください
@@ -12,9 +13,9 @@ console.log("Hello World");
  */
 function displayConst() {
   const a = "hoge";
-  return a;
+  console.log(displayConst(a));
 }
-  console.log(displayConst());
+  
 
 
 
@@ -24,9 +25,9 @@ function displayConst() {
  */
 function displayLet() {
     let a = "hoge";
-    return a;
+    console.log(displayLet(a));
   }
-    console.log(displayLet());
+    
 
 
 /**
@@ -36,7 +37,7 @@ function displayLet() {
 function displayArgument(arg) {
   console.log(arg);
 }
-displayArgument('arg');
+
 
 /**
  *  1.5 渡された二つの引数の合計を返却するメソッドを実装してください
@@ -45,7 +46,7 @@ displayArgument('arg');
 function sumTwoArgs(a, b) {
   return a + b;
 }
-  console.log(sumTwoArgs(2, 5));
+  
 
 /**
  *  1.6 渡された二つの引数の差を返却するメソッドを実装してください
@@ -54,7 +55,7 @@ function sumTwoArgs(a, b) {
 function subtractTwoArgs(a, b) {
   return a - b;
 }
-  console.log(subtractTwoArgs(5, 2));
+  
 
 /**
  *  1.7 渡された二つの引数の商を返却するメソッドを実装してください。0での割り算はnullを返却してください。
@@ -63,7 +64,7 @@ function subtractTwoArgs(a, b) {
 function quotientTwoArgs(a, b) {
   return a / b;
 }
-  console.log(quotientTwoArgs(4, 2));
+  
 
 
 /**
@@ -73,8 +74,7 @@ function quotientTwoArgs(a, b) {
 function productTwoArgs(a, b) {
   return a * b;
 }
-  console.log(productTwoArgs(4, 2));
-
+  
 
 /**
  *  1.9 渡された引数の2で割ったあまりを返却するメソッドを実装してください
@@ -83,7 +83,7 @@ function productTwoArgs(a, b) {
 function remainderTwoArgs(a) {
   return 5 % 2;
 }
-  console.log(remainderTwoArgs());
+  
 
 /**
  *  1.10 渡された引数が2の倍数であることを確認するメソッドを実装してください
